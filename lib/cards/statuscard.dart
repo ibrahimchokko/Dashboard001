@@ -1,3 +1,4 @@
+import 'package:dashboard_1/buttons/parttimebutton.dart';
 import 'package:flutter/material.dart';
 
 class StatusCard extends StatelessWidget {
@@ -24,7 +25,7 @@ class StatusCard extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  CircleAvatar(backgroundColor: Colors.white, radius: 35),
+                  CircleAvatar(backgroundColor: Colors.white, radius: 33),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -35,11 +36,11 @@ class StatusCard extends StatelessWidget {
                           children: [
                             Text(
                               " Jonnathan Donrew",
-                              style: TextStyle(fontSize: 22),
+                              style: TextStyle(fontSize: 20),
                             ),
                             Text(
                               "  Posted Yesterday",
-                              style: TextStyle(fontSize: 16),
+                              style: TextStyle(fontSize: 14),
                             ),
                           ],
                         ),
@@ -66,9 +67,11 @@ class StatusCard extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(children: [Text(""), Text("data")]),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [Text("data"), Text("data")]),
 
-                  ElevatedButton(onPressed: () {}, child: Text("Part-Time")),
+                  Parttimebutton(),
                 ],
               ),
             ),

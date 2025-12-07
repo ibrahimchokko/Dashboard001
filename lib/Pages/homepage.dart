@@ -19,7 +19,7 @@ class Homepage extends StatelessWidget {
               children: [
                 EarningCard(),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.31,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

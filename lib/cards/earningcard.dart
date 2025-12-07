@@ -13,15 +13,61 @@ class EarningCard extends StatelessWidget {
                     bottom: 10,
                     right: 10,
                   ),
-                  height: MediaQuery.of(context).size.height * 0.31,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   width: MediaQuery.of(context).size.width * 0.43,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: const Color.fromARGB(255, 33, 150, 243),
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  child: const Text(
-                    'Card 1',
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 65,
+                        padding: const EdgeInsets.only( left: 15, right: 10, top: 20),
+                        child: const Text(
+                          'Card 1',
+                          style: TextStyle(color: Colors.white, fontSize: 18),
+                        ),
+                      ),                      
+                      Container(
+                        padding: const EdgeInsets.only( left: 15, right: 10, top: 15 ),
+                        child: const Text(
+                          'Earnings',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 23,
+                            fontWeight: FontWeight.bold
+                            ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Container(
+                        padding: const EdgeInsets.only( left: 15, right: 10, top: 10 ),
+                        child: const Text(
+                          '\$12,500',
+                          style: TextStyle(
+                            color: Colors.white, 
+                            fontSize: 32,),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2,
+                      ),
+                      Container(    
+                        width: MediaQuery.of(context).size.width *0.4,                    
+                        padding: const EdgeInsets.only( left: 10, right: 10 ),
+                        child: Card(
+                          color: Color.fromARGB(255, 148, 195, 235),
+                          child: const Text(
+                            '+10% since last month',
+                            style: TextStyle(fontSize: 13),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 );
   }

@@ -11,7 +11,7 @@ class Projectscard extends StatelessWidget {
                               bottom: 4,
                               right: 4,
                             ),
-                            height: MediaQuery.of(context).size.height * 0.18,
+                            height: MediaQuery.of(context).size.height * 0.15,
                             width: MediaQuery.of(context).size.width * 0.4,
                             decoration: BoxDecoration(
                               color: Colors.orange,

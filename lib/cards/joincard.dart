@@ -27,17 +27,17 @@ class Joincard extends StatelessWidget {
                   Text("Engage with Clients",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 17,
+                    fontSize: 13,
                     fontWeight: FontWeight.bold,
                   ),),
                   Text("Join Slack Channel",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 13,
+                    fontSize: 9,
                   ),),
                 ],
               ), 
-              SizedBox(width: 20,),
+              SizedBox(width: 10,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.center,
