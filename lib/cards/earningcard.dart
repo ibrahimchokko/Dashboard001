@@ -57,13 +57,16 @@ class EarningCard extends StatelessWidget {
                         height: 2,
                       ),
                       Container(    
+                        height: 30,
                         width: MediaQuery.of(context).size.width *0.4,                    
                         padding: const EdgeInsets.only( left: 10, right: 10 ),
                         child: Card(
                           color: Color.fromARGB(255, 148, 195, 235),
-                          child: const Text(
-                            '+10% since last month',
-                            style: TextStyle(fontSize: 13),
+                          child: Center(
+                            child: const Text(
+                              '+10% since last month',
+                              style: TextStyle(fontSize: 13),
+                            ),
                           ),
                         ),
                       ),
