@@ -25,27 +25,37 @@ class StatusCard extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  CircleAvatar(backgroundColor: Colors.white, radius: 33),
+                  CircleAvatar(
+                    backgroundColor: Colors.white, 
+                    radius: 35,
+                    
+                    ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              " Jonnathan Donrew",
-                              style: TextStyle(fontSize: 20),
-                            ),
-                            Text(
-                              "  Posted Yesterday",
-                              style: TextStyle(fontSize: 14),
-                            ),
-                          ],
-                        ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            " Jonnathan Donrew",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                          Text(
+                            "  Posted Yesterday",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ],
                       ),
-                      TextButton(onPressed: null, child: Text("Mobile")),
+                      Container(
+                        height: 30,
+                        width: 65,
+                        margin: const EdgeInsets.only(left: 30),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.blueAccent
+                        ),
+                        child: Center(child: Text("Mobile"))),
                     ],
                   ),
                 ],
@@ -69,7 +79,10 @@ class StatusCard extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text("data"), Text("data")]),
+                    children: [Text("\$1,500",
+                    style: TextStyle(
+                      fontSize: 24,                    
+                    ),), Text("/ month")],),
 
                   Parttimebutton(),
                 ],

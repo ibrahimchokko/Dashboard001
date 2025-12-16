@@ -13,11 +13,13 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          appBar: AppBar(
-            animateColor: true,
-            title: const Text('Dashboard App'),
-            iconTheme: const IconThemeData(color: Colors.white,
-          ),),
+          // appBar: AppBar(
+          //   animateColor: true,
+          //   title: const Text('Good Morning, Jonnathan'),
+          //   backgroundColor: Colors.blue,
+          //   scrolledUnderElevation: 5.0,
+          //   iconTheme: const IconThemeData(color: Colors.white,
+          // ),),
           body: Homepage ()
       )
       );
