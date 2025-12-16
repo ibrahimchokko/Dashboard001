@@ -55,7 +55,7 @@ class StatusCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.blueAccent
                         ),
-                        child: Center(child: Text("Mobile"))),
+                        child: Center(child: Text("Mobile", style: TextStyle(fontSize: 12, color: Colors.white),))),
                     ],
                   ),
                 ],
@@ -71,7 +71,7 @@ class StatusCard extends StatelessWidget {
               margin: const EdgeInsets.all(10),
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: Colors.greenAccent,
+                color: Color.fromARGB(77, 198, 220, 233),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Row(

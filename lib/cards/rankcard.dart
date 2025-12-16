@@ -48,7 +48,7 @@ class Rankcard extends StatelessWidget {
               const Text(
                 'In Top 30%',
                 style: TextStyle(
-                  color: Color.fromARGB(221, 219, 180, 180),
+                  color: Color.fromARGB(221, 102, 92, 92),
                   fontWeight: FontWeight.bold,
                 ),
               ),

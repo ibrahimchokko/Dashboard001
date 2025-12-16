@@ -54,7 +54,7 @@ class Projectscard extends StatelessWidget {
                   const Text(
                     '8 this month',
                     style: TextStyle(
-                      color: Color.fromARGB(221, 219, 180, 180),
+                      color: Color.fromARGB(221, 102, 92, 92),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
